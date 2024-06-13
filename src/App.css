@@ -1,0 +1,417 @@
+:root {
+  background-color: #bfc5ff;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+.navbar-button {
+  color: black;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #bfc5ff;
+  border: #bfc5ff;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  color: black;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #bfc5ff;
+  border: #bfc5ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logo {
+  padding-right: 1000px;
+}
+
+h1 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h4{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: -5px;
+}
+
+ul {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: -5px;
+}
+
+.homepage-text {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footer {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 15vh;
+  text-align: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.homepage-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.option-label {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.dropdown-box {
+  background-color: #bfc5ff;
+  width: 200px;
+  height: 25px;
+  cursor: pointer;
+}
+
+button.btn.btn-default {
+  background: #e0e0e0;
+  box-shadow: none;
+}
+
+.proceed-button {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: bold;
+  background-color: #BFC5FF;
+  font-size: 1rem;
+  border-color: white;
+  border: 2px solid black;
+  width: 120px;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.proceed-button:hover {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 1rem;
+  border-color: white;
+  border: 2px solid black;
+  width: 120px;
+  border-radius: px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+.request-received-buttons{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.your-request-greater-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.your-request-container {
+  display: flex;
+  align-items: flex-start;
+  width: 40vw;
+  flex-direction: column;
+}
+
+.problem-input {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  background-color: #ffffff;
+  border: 2px solid black;
+  height: 30px;
+  width: 39.6vw;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 8px;
+
+}
+
+
+.forms-address {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  background-color: white;
+  border: 3px solid black;
+  height: 35px;
+  width: 41vw;
+  margin-bottom: 20px;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.forms-login {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  background-color: white;
+  border: 3px solid black;
+  height: 35px;
+  width: 20vw;
+  margin-bottom: 20px;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+
+.enter-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-and-enter {
+  display: flex;
+  flex-direction: column;
+}
+.account-details-row {
+  display: flex;
+  justify-content: center;
+}
+
+.label-login {
+  margin: 5px;
+}
+
+
+.standard-delivery-button {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  height: 40px;
+  width: 40.6vw;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-left: 8px;
+}
+
+.standard-delivery-button:hover {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  background-color: rgb(218, 156, 254);
+  height: 40px;
+  width: 40.6vw;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-left: 8px;
+
+}
+
+.expedited-delivery-button {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  height: 40px;
+  width: 40.6vw;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-left: 8px;
+
+}
+
+.expedited-delivery-button:hover {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  background-color: rgb(218, 156, 254);
+  height: 40px;
+  width: 40.6vw;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-left: 8px;
+
+}
+
+.back-next-container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.open-request-page-container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.request-card-container{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 40vw;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px black;
+}
+
+.card-details{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.update-cancel-button-container{
+  display: flex;
+}
+
+.update-delivery-button{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 400;
+  background-color: #a0c8fd;
+  font-size: 1rem;
+  border: 3px solid #a0c8fd;
+  width: 150px;
+  border-radius: 10px;
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.cancel-request-button{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: 400;
+  background-color: #f89eb8;
+  font-size: 1rem;
+  border: 3px solid #f89eb8;
+  width: 150px;
+  border-radius: 10px;
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.your-mate{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.mate-name{
+  margin-top: -15px;
+}
+
+.update-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-page-button-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin: 20px
+}
