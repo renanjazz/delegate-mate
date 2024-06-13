@@ -1,31 +1,17 @@
 import React from "react";
 import RequestCard from "../components/RequestCard";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { API_URL } from "../config";
 
-function OpenRequestPage({ userData, currentUser }) {
-  const [request, setRequest] = useState([]);
-
-  const getRequests = async (event) => {
-    try {
-      const { data } = await axios.get(`${API_URL}/create-request-page`);
-      console.log("This is the request", data);
-      setRequest(data);
-    } catch (error) {
-      console.log("Something went wrong with the delivery choice", error);
-    }
-  };
-  useEffect(() => {
-    getRequests();
-  }, []);
+function OpenRequestPage({ userData, currentUser, request, handleDelete }) {
   return (
     <div>
       <h1>Open requests</h1>
       {request.map((oneRequest) => {
-        return <RequestCard data={oneRequest} key={oneRequest.id} />;
+        return (
+          <div key={oneRequest.id}>
+            <RequestCard data={oneRequest} handleDelete={handleDelete} />
+          </div>
+        );
       })}
-
       {userData ? (
         <div>
           <h2></h2>

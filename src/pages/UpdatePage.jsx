@@ -4,15 +4,22 @@ import { useState } from "react";
 import { API_URL } from "../config";
 import axios from "axios";
 
-const UpdatePage = () => {
+const UpdatePage = ({ request, setRequest }) => {
   const [standard, setStandard] = useState("");
   const { id } = useParams();
   const nav = useNavigate();
+
   const handleUpdate = async () => {
     try {
+      const dataToUpdate = { standard: standard }; 
       const { data } = await axios.patch(
         `${API_URL}/create-request-page/${id}`,
-        { standard }
+        dataToUpdate
+      );
+      setRequest((prevRequests) =>
+        prevRequests.map((oneRequest) =>
+          oneRequest.id === data.id ? data : oneRequest
+        )
       );
       console.log("This is the request", data);
       nav("/open-requests");
@@ -20,6 +27,7 @@ const UpdatePage = () => {
       console.log("Error updating", error);
     }
   };
+
   return (
     <>
       <h2>Update delivery</h2>
