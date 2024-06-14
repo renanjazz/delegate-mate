@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import dobby from "../assets/dobby.png";
 import { Link } from "react-router-dom";
 
