@@ -52,7 +52,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/companies" element={<CompanyPage />} />
-        <Route path="/create-request" element={<CreateRequestPage />} />
+        <Route path="/create-request" element={<CreateRequestPage setRequest={setRequest} request={request}/>} />
         <Route
           path="/login"
           element={<LoginPage setCurrentUser={setCurrentUser} />}

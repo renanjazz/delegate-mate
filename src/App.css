@@ -212,6 +212,9 @@ button.btn.btn-default {
 
 }
 
+.no-account{
+  margin: 50px
+}
 
 .forms-address {
   font-family: "neue-haas-grotesk-text", sans-serif;
@@ -219,7 +222,7 @@ button.btn.btn-default {
   font-size: 1rem;
   text-align: center;
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid black;
   height: 35px;
   width: 41vw;
   margin-bottom: 20px;
@@ -233,7 +236,7 @@ button.btn.btn-default {
   font-size: 1rem;
   text-align: center;
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid black;
   height: 35px;
   width: 20vw;
   margin-bottom: 20px;
@@ -280,6 +283,8 @@ button.btn.btn-default {
   overflow: hidden;
   border-radius: 10px;
   padding-left: 8px;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 2px black;
 }
 
 .standard-delivery-button:hover {
@@ -287,14 +292,19 @@ button.btn.btn-default {
   color: black;
   font-size: 1rem;
   text-align:left;
-  background-color: rgb(218, 156, 254);
+  background-color: #a2abff;
   height: 40px;
   width: 40.6vw;
   margin-bottom: 10px;
   overflow: hidden;
   border-radius: 10px;
   padding-left: 8px;
+  border: 2px solid #a2abff;
+}
 
+.standard-delivery-button.selected {
+  background-color: #a2abff;
+  border: 2px solid #020305;
 }
 
 .expedited-delivery-button {
@@ -310,6 +320,8 @@ button.btn.btn-default {
   overflow: hidden;
   border-radius: 10px;
   padding-left: 8px;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 2px black;
 
 }
 
@@ -318,14 +330,19 @@ button.btn.btn-default {
   color: black;
   font-size: 1rem;
   text-align:left;
-  background-color: rgb(218, 156, 254);
+  background-color: #a2abff;
   height: 40px;
   width: 40.6vw;
   margin-bottom: 10px;
   overflow: hidden;
   border-radius: 10px;
   padding-left: 8px;
+  border: 2px solid #a2abff;
+}
 
+.expedited-delivery-button.selected {
+  background-color: #a2abff;
+  border: 2px solid #020305;
 }
 
 .back-next-container{
@@ -368,9 +385,9 @@ button.btn.btn-default {
   font-family: "neue-haas-grotesk-text", sans-serif;
   color: black;
   font-weight: 400;
-  background-color: #a0c8fd;
+  background-color: #a2abff;;
   font-size: 1rem;
-  border: 3px solid #a0c8fd;
+  border: 3px solid #a2abff;
   width: 150px;
   border-radius: 10px;
   height: 35px;
@@ -415,4 +432,95 @@ button.btn.btn-default {
   flex-direction: column;
   margin-top: 20px;
   margin: 20px
+}
+
+.company-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 2px black;
+  padding: 0px
+}
+
+.company-description {
+  color: #555;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+  background-color: #a2abff;
+}
+
+.company-card.selected {
+  background-color: #a2abff;
+  border: 2px solid #020305;
+}
+
+.proceed-button-company-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.proceed-button-company {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-weight: bold;
+  background-color: #BFC5FF;
+  font-size: 1rem;
+  border-color: white;
+  border: 2px solid black;
+  width: 120px;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.proceed-button-company:hover {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 1rem;
+  border-color: white;
+  border: 2px solid black;
+  width: 120px;
+  border-radius: px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.create-request-form{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: bold;
+}
+
+.create-request-dropdown{
+  background-color: white;
+  width: 40.2vw;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  border: 2px solid black;
+  padding-left: 5px;  
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  margin-bottom: 20px;
+}
+
+.create-request-dropdown-option{
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: bold;
+  
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../config";
+import { Link } from "react-router-dom";
 
 const CompanyPage = () => {
   const location = useLocation();
@@ -34,7 +35,7 @@ const CompanyPage = () => {
   const handleProceed = () => {
     if (selectedCompany) {
       localStorage.setItem("selectedCompany", JSON.stringify(selectedCompany));
-      navigate("/login", { state: { selectedCompany } });
+      navigate("/create-request", { state: { selectedCompany } });
     } else {
       alert("Please select a company to proceed.");
     }
@@ -56,14 +57,21 @@ const CompanyPage = () => {
             }`}
             onClick={() => handleSelectCompany(company)}
           >
-            <h2 className="company-title">{company.title}</h2>
+            <h3 className="company-title">{company.title}</h3>
             <p className="company-description">{company.description}</p>
           </div>
         ))}
       </div>
-      <button className="proceed-button" onClick={handleProceed}>
-        Proceed
-      </button>
+      <div className="proceed-button-company-container">
+        
+        <Link to="/">
+          <button className="proceed-button">Home</button>
+        </Link>
+        <button className="proceed-button-company" onClick={handleProceed}>
+          Proceed
+        </button>
+      </div>
+  
     </div>
   );
 };

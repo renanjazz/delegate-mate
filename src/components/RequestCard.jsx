@@ -1,21 +1,22 @@
 import dobby from "../assets/dobby.png";
 import { Link } from "react-router-dom";
 
+
 const RequestCard = ({ data, handleDelete }) => {
   return (
     <>
       <div className="open-request-page-container">
         <div className="request-card-container">
           <div className="card-details">
-            <h3>{data.worker} </h3>
+            <h3>Plumber Pro</h3>
             <p>
-              <strong>Service requested:</strong> {data.service} 
+              <strong>Service requested:</strong> Plumbing 
             </p>
             <p>
               <strong>Delivery:</strong> {data.standard} 
             </p>
             <p>
-              <strong>Status:</strong> {data.status} 
+              <strong>Status:</strong> Pending 
             </p>
             <div className="update-cancel-button-container">
               <Link to={`/update-delivery/${data.id}`}>

@@ -105,7 +105,7 @@ const LoginPage = ({ setCurrentUser }) => {
             Enter
           </button>
         </div>
-        <h4>Don't have an account yet?</h4>
+        <h3 className="no-account">Don't have an account yet?</h3>
         <form className="login-form" onSubmit={handleAddLogin}>
           <div className="account-details-row">
             <label className="label-login">

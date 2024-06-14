@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const CreateRequestPage = () => {
+const CreateRequestPage = ({request, setRequest}) => {
   const [standard, setStandard] = useState("");
   const nav = useNavigate();
   const handleAddStandard = async (event) => {
@@ -13,6 +13,7 @@ const CreateRequestPage = () => {
         standard,
       });
       console.log("Standard chosen", data);
+      setRequest([data, ...request]);
       nav("/login");
     } catch (error) {
       console.log("Something went wrong choosing standard");
@@ -52,28 +53,17 @@ const CreateRequestPage = () => {
               </label>
             </div>
             <h4>Delivery</h4>
-            <form>
-              <select onChange={(event) => setStandard(event.target.value)}>
-                <option value="standard (5-365 days)">
-                  standard (5-365 days)
+            <form className="create-request-form">
+              <select className="create-request-dropdown" onChange={(event) => setStandard(event.target.value)}>
+                <option className="create-request-dropdown-option" value="standard (5-365 days)">
+                  Standard (5-365 days)
                 </option>
-                <option value="expedited (yesterday)">
-                  expedited (yesterday)
+                <option className="create-request-dropdown-option" value="expedited (yesterday)">
+                  Expedited (yesterday) + 1000 EUR
                 </option>
               </select>
             </form>
-            <button
-              className="standard-delivery-button"
-              onClick={() => handleAddStandard(standard)}
-            >
-              <strong>Standard delivery:</strong> 5-365 days
-            </button>
-            <button
-              onClick={() => handleAddExpedited(expedited)}
-              className="expedited-delivery-button"
-            >
-              <strong>Expedited delivery:</strong> yesterday <i>(+1000 EUR)</i>
-            </button>
+           
           </div>
         </div>
         <div className="back-next-container">

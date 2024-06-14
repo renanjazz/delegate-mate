@@ -1,10 +1,13 @@
 import React from "react";
 import RequestCard from "../components/RequestCard";
+import FakeRequestCard from "../components/FakeRequestCard";
 
-function OpenRequestPage({ userData, currentUser, request, handleDelete }) {
+function OpenRequestPage({ request, handleDelete, currentUser }) {
   return (
+    
     <div>
-      <h1>Open requests</h1>
+     <h4>Welcome {currentUser.username}, here are your requests:</h4>
+      <h2>Requests</h2>
       {request.map((oneRequest) => {
         return (
           <div key={oneRequest.id}>
@@ -12,15 +15,9 @@ function OpenRequestPage({ userData, currentUser, request, handleDelete }) {
           </div>
         );
       })}
-      {userData ? (
-        <div>
-          <h2></h2>
-          <p></p>
-          <p></p>
-        </div>
-      ) : (
-        <p></p>
-      )}
+      <div>
+        <FakeRequestCard />
+      </div>
     </div>
   );
 }
